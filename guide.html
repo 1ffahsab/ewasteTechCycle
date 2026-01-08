@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide - TechCycle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="h-full w-full overflow-auto">
+  <div id="app" class="w-full h-full">
+    <!-- Navigation Bar -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <svg class="w-8 h-8 text-green-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="text-2xl font-bold text-green-800">TechCycle</span>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="nav-link font-medium text-green-800 hover:text-green-600">Home</a>
+        <a href="about.html" class="nav-link font-medium text-green-800 hover:text-green-600">About</a>
+        <a href="impact.html" class="nav-link font-medium text-green-800 hover:text-green-600">Impact & Awareness</a>
+        <a href="guide.html" class="nav-link font-medium text-green-800 hover:text-green-600">Guide</a>
+        <a href="centers.html" class="nav-link font-medium text-green-800 hover:text-green-600">Centers</a>
+        <a href="contact.html" class="nav-link font-medium text-green-800 hover:text-green-600">Contact</a>
+        <a href="feedback.html" class="nav-link font-medium text-green-800 hover:text-green-600">Feedback</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded text-green-800">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Links -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+      <a href="index.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Home</a>
+      <a href="about.html" class="block py-2 font-medium text-green-800 hover:text-green-600">About</a>
+      <a href="impact.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Impact & Awareness</a>
+      <a href="guide.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Guide</a>
+      <a href="centers.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Centers</a>
+      <a href="contact.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Contact</a>
+      <a href="feedback.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Feedback</a>
+    </div>
+  </div>
+</nav>
+
+    <!-- Guide Section -->
+    <section class="pt-32 pb-20 px-6 bg-green-50 min-h-screen">
+      <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-12 text-green-800">How to Recycle E-Waste</h1>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div class="text-center">
+            <div class="w-20 h-20 bg-green-600 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-white">1</div>
+            <h3 class="text-xl font-semibold mb-3 text-green-800">Identify</h3>
+            <p class="text-gray-700">Gather old electronics: phones, computers, tablets, batteries, and cables</p>
+          </div>
+          <div class="text-center">
+            <div class="w-20 h-20 bg-green-600 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-white">2</div>
+            <h3 class="text-xl font-semibold mb-3 text-green-800">Prepare</h3>
+            <p class="text-gray-700">Backup data and perform factory reset to protect your personal information</p>
+          </div>
+          <div class="text-center">
+            <div class="w-20 h-20 bg-green-600 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-white">3</div>
+            <h3 class="text-xl font-semibold mb-3 text-green-800">Locate</h3>
+            <p class="text-gray-700">Find a certified recycling center near you using our center locator</p>
+          </div>
+          <div class="text-center">
+            <div class="w-20 h-20 bg-green-600 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-white">4</div>
+            <h3 class="text-xl font-semibold mb-3 text-green-800">Drop Off</h3>
+            <p class="text-gray-700">Bring your e-waste to the center during operating hours</p>
+          </div>
+        </div>
+
+        <div class="mt-12 bg-green-100 rounded-lg p-8 mb-12">
+          <h3 class="text-2xl font-semibold mb-4 text-green-800">💡 Quick Tips</h3>
+          <ul class="space-y-3 text-lg text-gray-700">
+            <li>🔋 Remove batteries from devices when possible</li>
+            <li>✓ Delete all personal data before recycling</li>
+            <li>✓ Keep cords and accessories together</li>
+            <li>✓ Don't throw electronics in regular trash</li>
+          </ul>
+        </div>
+
+        <!-- Video Section -->
+        <section class="mb-12">
+          <h2 class="text-4xl font-bold text-center mb-8 text-green-800">Learn About E-Waste Recycling</h2>
+          <p class="text-center text-gray-700 text-lg mb-12 max-w-3xl mx-auto">
+            Watch this informative video to understand how recycling process happens.
+          </p>
+          
+          <div class="max-w-4xl mx-auto">
+            <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-2xl shadow-2xl">
+              <iframe 
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/MFzQr8ZQbCI" 
+                title="E-Waste Recycling Explained"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </section>
+
+        <!-- E-Waste Identification Table -->
+        <div class="bg-white rounded-xl shadow-lg p-8">
+          <h3 class="text-2xl font-semibold mb-6 text-green-800">📋 E-Waste Identification Guide</h3>
+          <p class="text-gray-700 mb-6">Use this table to identify common electronic waste items and how to prepare them for recycling:</p>
+          
+          <div class="overflow-x-auto">
+            <table class="min-w-full border-collapse border border-green-200">
+              <!-- Table content from your original code -->
+              <thead>
+                <tr class="bg-green-50">
+                  <th class="border border-green-300 px-6 py-3 text-left text-sm font-semibold text-green-800">Category</th>
+                  <th class="border border-green-300 px-6 py-3 text-left text-sm font-semibold text-green-800">Examples</th>
+                  <th class="border border-green-300 px-6 py-3 text-left text-sm font-semibold text-green-800">Preparation Required</th>
+                  <th class="border border-green-300 px-6 py-3 text-left text-sm font-semibold text-green-800">Recyclability</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Table rows from your original code -->
+                <!-- Computers & Laptops -->
+                <tr class="hover:bg-green-50 transition-colors">
+                  <td class="border border-green-200 px-6 py-4 font-medium text-green-800">💻 Computers & Laptops</td>
+                  <td class="border border-green-200 px-6 py-4 text-gray-700">Desktop PCs, Laptops, Servers, Tablets</td>
+                  <td class="border border-green-200 px-6 py-4 text-gray-700">Backup data, factory reset, remove batteries</td>
+                  <td class="border border-green-200 px-6 py-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium">
+                      ✅ Highly Recyclable
+                    </span>
+                  </td>
+                </tr>
+                
+                <!-- Mobile Devices -->
+                <tr class="hover:bg-green-50 transition-colors bg-gray-50">
+                  <td class="border border-green-200 px-6 py-4 font-medium text-green-800">📱 Mobile Devices</td>
+                  <td class="border border-green-200 px-6 py-4 text-gray-700">Smartphones, Feature Phones, Smartwatches</td>
+                  <td class="border border-green-200 px-6 py-4 text-gray-700">Remove SIM/memory cards, factory reset</td>
+                  <td class="border border-green-200 px-6 py-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium">
+                      ✅ Highly Recyclable
+                    </span>
+                  </td>
+                </tr>
+                
+                <!-- Home Electronics -->
+                <tr class="hover:bg-green-50 transition-colors">
+                  <td class="border border-green-200 px-6 py-4 font-medium text-green-800">📺 Home Electronics</td>
+                  <td class="border border-green-200 px-6 py-4 text-gray-700">TVs, Monitors, Printers, Routers</td>
+                  <td class="border border-green-200 px-6 py-4 text-gray-700">Remove cables/accessories, check for hazardous materials</td>
+                  <td class="border border-green-200 px-6 py-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-yellow-100 text-yellow-800 text-sm font-medium">
+                      ⚠️ Condition Dependent
+                    </span>
+                  </td>
+                </tr>
+                
+                <!-- Batteries -->
+                <tr class="hover:bg-green-50 transition-colors bg-gray-50">
+                  <td class="border border-green-200 px-6 py-4 font-medium text-green-800">🔋 Batteries</td>
+                  <td class="border border-green-200 px-6 py-4 text-gray-700">Lithium-ion, AA/AAA, Car Batteries</td>
+                  <td class="border border-green-200 px-6 py-4 text-gray-700">Tape terminals, separate by type, no damage</td>
+                  <td class="border border-green-200 px-6 py-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-red-100 text-red-800 text-sm font-medium">
+                      ⚠️ Special Handling
+                    </span>
+                  </td>
+                </tr>
+                
+                <!-- Cables & Accessories -->
+                <tr class="hover:bg-green-50 transition-colors">
+                  <td class="border border-green-200 px-6 py-4 font-medium text-green-800">🔌 Cables & Accessories</td>
+                  <td class="border border-green-200 px-6 py-4 text-gray-700">Chargers, USB Cables, Headphones, Adapters</td>
+                  <td class="border border-green-200 px-6 py-4 text-gray-700">Bundle together, no tangling</td>
+                  <td class="border border-green-200 px-6 py-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium">
+                      ✅ Recyclable
+                    </span>
+                  </td>
+                </tr>
+                
+                <!-- Kitchen Appliances -->
+                <tr class="hover:bg-green-50 transition-colors bg-gray-50">
+                  <td class="border border-green-200 px-6 py-4 font-medium text-green-800">🍳 Kitchen Electronics</td>
+                  <td class="border border-green-200 px-6 py-4 text-gray-700">Microwaves, Blenders, Coffee Makers, Toasters</td>
+                  <td class="border border-green-200 px-6 py-4 text-gray-700">Clean thoroughly, remove food residue</td>
+                  <td class="border border-green-200 px-6 py-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-yellow-100 text-yellow-800 text-sm font-medium">
+                      ⚠️ Condition Dependent
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <!-- Key for Recyclability -->
+          <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="flex items-center">
+              <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium mr-3">
+                ✅ Highly Recyclable
+              </span>
+              <span class="text-sm text-gray-600">Over 90% materials recoverable</span>
+            </div>
+            <div class="flex items-center">
+              <span class="inline-flex items-center px-3 py-1 rounded-full bg-yellow-100 text-yellow-800 text-sm font-medium mr-3">
+                ⚠️ Condition Dependent
+              </span>
+              <span class="text-sm text-gray-600">50-90% materials recoverable</span>
+            </div>
+            <div class="flex items-center">
+              <span class="inline-flex items-center px-3 py-1 rounded-full bg-red-100 text-red-800 text-sm font-medium mr-3">
+                ⚠️ Special Handling
+              </span>
+              <span class="text-sm text-gray-600">Contains hazardous materials</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-12 px-6 mt-20">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="flex items-center justify-center space-x-2 mb-6">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="text-2xl font-bold">TechCycle</span>
+        </div>
+        <p class="mb-6 text-lg">Making e-waste recycling accessible for everyone</p>
+        <div class="flex justify-center space-x-8 mb-6">
+          <a href="index.html" class="transition-opacity hover:opacity-70">Home</a>
+          <a href="about.html" class="transition-opacity hover:opacity-70">About</a>
+          <a href="impact.html" class="transition-opacity hover:opacity-70">Impact</a>
+          <a href="guide.html" class="transition-opacity hover:opacity-70">Guide</a>
+          <a href="centers.html" class="transition-opacity hover:opacity-70">Centers</a>
+        </div>
+        <p class="opacity-70">© 2024 TechCycle. All rights reserved. Together for a sustainable future.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

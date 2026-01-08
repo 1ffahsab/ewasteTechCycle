@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impact & Awareness - TechCycle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="h-full w-full overflow-auto">
+  <div id="app" class="w-full h-full">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <svg class="w-8 h-8 text-green-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="text-2xl font-bold text-green-800">TechCycle</span>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="nav-link font-medium text-green-800 hover:text-green-600">Home</a>
+            <a href="about.html" class="nav-link font-medium text-green-800 hover:text-green-600">About</a>
+            <a href="impact.html" class="nav-link font-medium text-green-800 hover:text-green-600">Impact & Awareness</a>
+            <a href="guide.html" class="nav-link font-medium text-green-800 hover:text-green-600">Guide</a>
+            <a href="centers.html" class="nav-link font-medium text-green-800 hover:text-green-600">Centers</a>
+            <a href="contact.html" class="nav-link font-medium text-green-800 hover:text-green-600">Contact</a>
+            <a href="feedback.html" class="nav-link font-medium text-green-800 hover:text-green-600">Feedback</a>
+          </div>
+          <button id="mobile-menu-btn" class="md:hidden p-2 rounded text-green-800">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+          <a href="index.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Home</a>
+          <a href="about.html" class="block py-2 font-medium text-green-800 hover:text-green-600">About</a>
+          <a href="impact.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Impact & Awareness</a>
+          <a href="guide.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Guide</a>
+          <a href="centers.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Centers</a>
+          <a href="contact.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Contact</a>
+          <a href="feedback.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Feedback</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Impact & Awareness Section -->
+    <section class="pt-32 pb-20 px-6 bg-white min-h-screen">
+      <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-12 text-green-800">Impact & Awareness</h1>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Statistics Box with Link -->
+          <a href="https://www.statista.com/topics/3409/electronic-waste-worldwide/#topicOverview" class="impact-card bg-green-50 rounded-xl p-8 shadow-lg text-center border-2 border-green-200 hover:border-green-400 hover:shadow-xl transition-all duration-300 block">
+            <div class="text-xl font-semibold mb-3 text-green-800">Statistics</div>
+            <p class="text-gray-700 mb-4">Devices recycled worldwide, preventing millions of pounds of toxic waste from entering landfills and harming our environment.</p>
+            <div class="text-green-600 font-medium mt-4">Learn More →</div>
+          </a>
+          
+          <!-- Environmental Impact Box with Link -->
+          <a href="https://youtu.be/RUwUz-bn_lE?si=jeJQzdHsUOSbMQ2o" class="impact-card bg-green-50 rounded-xl p-8 shadow-lg text-center border-2 border-green-200 hover:border-green-400 hover:shadow-xl transition-all duration-300 block">
+            <div class="text-xl font-semibold mb-3 text-green-800">Environmental Impact</div>
+            <p class="text-gray-700 mb-4">Tons of CO₂ emissions prevented through responsible recycling and resource recovery, helping combat climate change.</p>
+            <div class="text-green-600 font-medium mt-4">Watch Video →</div>
+          </a>
+          
+          <!-- Education Box with Link -->
+          <a href="guide.html" class="impact-card bg-green-50 rounded-xl p-8 shadow-lg text-center border-2 border-green-200 hover:border-green-400 hover:shadow-xl transition-all duration-300 block">
+            <div class="text-xl font-semibold mb-3 text-green-800">Education</div>
+            <p class="text-gray-700 mb-4">People educated about proper e-waste disposal methods and the importance of environmental conservation practices.</p>
+            <div class="text-green-600 font-medium mt-4">Learn More →</div>
+          </a>
+          
+          <!-- Best Practices Box with Link -->
+          <a href="https://rkcmpd-eria.org/malaysia/national-laws-and-regulation" class="impact-card bg-green-50 rounded-xl p-8 shadow-lg text-center border-2 border-green-200 hover:border-green-400 hover:shadow-xl transition-all duration-300 block">
+            <div class="text-xl font-semibold mb-3 text-green-800">Best Practices</div>
+            <p class="text-gray-700 mb-4">Certified centers following industry-leading recycling standards, protocols, and environmental safety regulations.</p>
+            <div class="text-green-600 font-medium mt-4">Learn More →</div>
+          </a>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-12 px-6">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="flex items-center justify-center space-x-2 mb-6">
+          <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="text-2xl font-bold">TechCycle</span>
+        </div>
+        <p class="mb-6 text-lg">Making e-waste recycling accessible for everyone</p>
+        <div class="flex justify-center space-x-8 mb-6">
+          <a href="index.html" class="transition-opacity hover:opacity-70">Home</a>
+          <a href="about.html" class="transition-opacity hover:opacity-70">About</a>
+          <a href="impact.html" class="transition-opacity hover:opacity-70">Impact</a>
+          <a href="guide.html" class="transition-opacity hover:opacity-70">Guide</a>
+          <a href="centers.html" class="transition-opacity hover:opacity-70">Centers</a>
+        </div>
+        <p class="opacity-70">© 2024 TechCycle. All rights reserved. Together for a sustainable future.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
