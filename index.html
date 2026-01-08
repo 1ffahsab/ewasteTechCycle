@@ -9,91 +9,122 @@
 </head>
 <body class="h-full w-full overflow-auto">
   <div id="app" class="w-full h-full">
-   <!-- Navigation Bar -->
-<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
-  <div class="max-w-7xl mx-auto px-6 py-4">
-    <div class="flex items-center justify-between">
-      <!-- Logo -->
-      <div class="flex items-center space-x-2">
-        <svg class="w-8 h-8 text-green-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="text-2xl font-bold text-green-800">TechCycle</span>
-      </div>
-
-      <!-- Desktop Navigation Links -->
-      <div class="hidden md:flex space-x-8">
-        <a href="index.html" class="nav-link font-medium text-green-800 hover:text-green-600">Home</a>
-        <a href="about.html" class="nav-link font-medium text-green-800 hover:text-green-600">About</a>
-        <a href="impact.html" class="nav-link font-medium text-green-800 hover:text-green-600">Impact & Awareness</a>
-        <a href="guide.html" class="nav-link font-medium text-green-800 hover:text-green-600">Guide</a>
-        <a href="centers.html" class="nav-link font-medium text-green-800 hover:text-green-600">Centers</a>
-        <a href="contact.html" class="nav-link font-medium text-green-800 hover:text-green-600">Contact</a>
-        <a href="feedback.html" class="nav-link font-medium text-green-800 hover:text-green-600">Feedback</a>
-      </div>
-
-      <!-- Mobile Menu Button -->
-      <button id="mobile-menu-btn" class="md:hidden p-2 rounded text-green-800">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Mobile Menu Links -->
-    <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
-      <a href="index.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Home</a>
-      <a href="about.html" class="block py-2 font-medium text-green-800 hover:text-green-600">About</a>
-      <a href="impact.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Impact & Awareness</a>
-      <a href="guide.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Guide</a>
-      <a href="centers.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Centers</a>
-      <a href="contact.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Contact</a>
-      <a href="feedback.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Feedback</a>
-    </div>
-  </div>
-</nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-gradient pt-32 pb-20 px-6">
-      <div class="hero-image">
-        <div class="hero-text">
-          <div class="max-w-7xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white">Dispose Smart, Recycle Better</h1>
-            <p class="text-xl md:text-2xl mb-8 text-white opacity-90">Join the movement to responsibly recycle electronics and protect our planet</p>
-            
-            <!-- White CTA Buttons - Side by Side -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-              <a href="guide.html" class="cta-button px-10 py-4 bg-white text-green-700 rounded-lg font-bold text-lg transition-all hover:scale-105 shadow-xl hover:shadow-2xl">Get Started</a>
-              <a href="centers.html" class="cta-button px-10 py-4 bg-white text-green-700 rounded-lg font-bold text-lg transition-all hover:scale-105 shadow-xl hover:shadow-2xl">Find Centers</a>
-            </div>
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center space-x-2">
+            <svg class="w-8 h-8 text-green-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="text-2xl font-bold text-green-800">TechCycle</span>
           </div>
 
-          <!-- Three Info Boxes Under Main Section -->
-          <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 px-6">
-            <div class="bg-white rounded-xl p-8 shadow-2xl text-center transform transition-all hover:scale-105">
-              <div class="text-5xl mb-4">🌍</div>
-              <h3 class="text-2xl font-bold text-green-800 mb-4">Environmental Protection</h3>
-              <p class="text-gray-700 leading-relaxed">Safeguard our planet by preventing toxic e-waste from contaminating soil and water, protecting ecosystems for future generations.</p>
-            </div>
-            <div class="bg-white rounded-xl p-8 shadow-2xl text-center transform transition-all hover:scale-105">
-              <div class="text-5xl mb-4">♻️</div>
-              <h3 class="text-2xl font-bold text-green-800 mb-4">Resource Recovery</h3>
-              <p class="text-gray-700 leading-relaxed">Extract valuable metals and materials from old electronics, reducing the need for mining and conserving natural resources.</p>
-            </div>
-            <div class="bg-white rounded-xl p-8 shadow-2xl text-center transform transition-all hover:scale-105">
-              <div class="text-5xl mb-4">🌱</div>
-              <h3 class="text-2xl font-bold text-green-800 mb-4">Sustainable Future</h3>
-              <p class="text-gray-700 leading-relaxed">Build a circular economy where electronic waste becomes tomorrow's resources, creating a cleaner, greener world for all.</p>
-            </div>
+          <!-- Desktop Navigation Links -->
+          <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="nav-link font-medium text-green-800 hover:text-green-600">Home</a>
+            <a href="about.html" class="nav-link font-medium text-green-800 hover:text-green-600">About</a>
+            <a href="impact.html" class="nav-link font-medium text-green-800 hover:text-green-600">Impact & Awareness</a>
+            <a href="guide.html" class="nav-link font-medium text-green-800 hover:text-green-600">Guide</a>
+            <a href="centers.html" class="nav-link font-medium text-green-800 hover:text-green-600">Centers</a>
+            <a href="contact.html" class="nav-link font-medium text-green-800 hover:text-green-600">Contact</a>
+            <a href="feedback.html" class="nav-link font-medium text-green-800 hover:text-green-600">Feedback</a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-btn" class="md:hidden p-2 rounded text-green-800">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Links -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+          <a href="index.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Home</a>
+          <a href="about.html" class="block py-2 font-medium text-green-800 hover:text-green-600">About</a>
+          <a href="impact.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Impact & Awareness</a>
+          <a href="guide.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Guide</a>
+          <a href="centers.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Centers</a>
+          <a href="contact.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Contact</a>
+          <a href="feedback.html" class="block py-2 font-medium text-green-800 hover:text-green-600">Feedback</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Hero Section with ewaste.jpg Background -->
+    <section id="home" class="relative min-h-screen pt-24 pb-20 px-6 flex items-center">
+      <!-- Background Image -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="ewaste.jpg" 
+          alt="E-Waste Recycling Background" 
+          class="w-full h-full object-cover"
+        >
+        <!-- Dark overlay for better text readability -->
+        <div class="absolute inset-0 bg-gradient-to-r from-green-900/70 to-blue-900/70"></div>
+      </div>
+      
+      <!-- Main Content - Centered -->
+      <div class="relative z-10 max-w-7xl mx-auto w-full text-center text-white">
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          Dispose Smart,<br>Recycle Better
+        </h1>
+        <p class="text-xl md:text-2xl mb-10 opacity-90 leading-relaxed max-w-3xl mx-auto">
+          Join the movement to responsibly recycle electronics and protect our planet.
+        </p>
+        
+        <!-- CTA Buttons - Centered -->
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a href="guide.html" class="inline-flex items-center justify-center px-10 py-5 bg-white text-green-800 rounded-xl font-bold text-xl transition-all hover:scale-105 shadow-2xl hover:shadow-3xl transform">
+            Get Started
+          </a>
+          <a href="centers.html" class="inline-flex items-center justify-center px-10 py-5 bg-transparent text-white border-2 border-white rounded-xl font-bold text-xl transition-all hover:scale-105 hover:bg-white/10 transform">
+            Find Centers
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three Info Boxes Section - BELOW the hero -->
+    <section class="py-20 px-6 bg-gray-50">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Environmental Protection Card -->
+          <div class="bg-white rounded-2xl p-8 shadow-xl text-center transform transition-all hover:scale-105">
+            <div class="text-5xl mb-6">🌍</div>
+            <h3 class="text-2xl font-bold text-green-800 mb-4">Environmental Protection</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Safeguard our planet by preventing toxic e-waste from contaminating soil and water, protecting ecosystems for future generations.
+            </p>
+          </div>
+          
+          <!-- Resource Recovery Card -->
+          <div class="bg-white rounded-2xl p-8 shadow-xl text-center transform transition-all hover:scale-105">
+            <div class="text-5xl mb-6">♻️</div>
+            <h3 class="text-2xl font-bold text-green-800 mb-4">Resource Recovery</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Extract valuable metals and materials from old electronics, reducing the need for mining and conserving natural resources.
+            </p>
+          </div>
+          
+          <!-- Sustainable Future Card -->
+          <div class="bg-white rounded-2xl p-8 shadow-xl text-center transform transition-all hover:scale-105">
+            <div class="text-5xl mb-6">🌱</div>
+            <h3 class="text-2xl font-bold text-green-800 mb-4">Sustainable Future</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Build a circular economy where electronic waste becomes tomorrow's resources, creating a cleaner, greener world for all.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-green-800 text-white py-12 px-6 mt-20">
+    <footer class="bg-green-800 text-white py-12 px-6">
       <div class="max-w-7xl mx-auto text-center">
         <div class="flex items-center justify-center space-x-2 mb-6">
           <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
